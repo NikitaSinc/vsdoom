@@ -1,0 +1,15 @@
+{
+  "name": "vsdoom",
+  "displayName": "VSDOOM",
+  "description": "vsdoom",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "VSpaceCode.vspacecode"
+  ]
+}
