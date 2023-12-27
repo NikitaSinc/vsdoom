@@ -1,7 +1,7 @@
 {
   "name": "vsdoom",
   "displayName": "VSDOOM",
-  "description": "vsdoom",
+  "description": "Clojure VSCode setup for fast start",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
@@ -106,6 +106,13 @@
                 "icon": "rocket",
                 "type": "command",
                 "command": "workbench.action.showCommands"
+              },
+              {
+                "key": " ",
+                "name": "+Find file in project",
+                "icon": "file",
+                "type": "command",
+                "command": "workbench.action.quickOpen"
               },
               {
                 "key": "\t",
@@ -1326,7 +1333,7 @@
                     "command": "magit.dispatch"
                   },
                   {
-                    "key": "s",
+                    "key": "g",
                     "name": "Status",
                     "icon": "preview",
                     "type": "command",
@@ -8185,13 +8192,7 @@
                     "type": "command",
                     "command": "workbench.action.tasks.build"
                   },
-                  {
-                    "key": "f",
-                    "name": "+Find file in project",
-                    "icon": "file",
-                    "type": "command",
-                    "command": "workbench.action.quickOpen"
-                  },
+
                   {
                     "key": "l",
                     "name": "+Switch project",
