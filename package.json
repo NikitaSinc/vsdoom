@@ -127,6 +127,11 @@
         "key": "shift+d",
         "command": "search.searchEditor.action.deleteFileResults",
         "when": "inSearchEditor"
+      },
+      {
+        "key": "ctrl+k",
+        "command": "search.action.focusSearchFromResults",
+        "when": "accessibilityModeEnabled && searchViewletVisible || firstMatchFocus && searchViewletVisible"
       }
     ],
     "configuration": [
