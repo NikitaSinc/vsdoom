@@ -10,7 +10,6 @@
 *.yml
 
 src/**
-out/**
 dist/test/**
 dist/**/*.map
 node_modules/**
