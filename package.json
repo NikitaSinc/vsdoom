@@ -675,37 +675,66 @@
               },
               {
                 "key": "c",
-                "name": "+Compile/Comments",
+                "name": "Convert",
                 "icon": "gear",
                 "type": "bindings",
                 "bindings": [
                   {
-                    "key": "c",
-                    "name": "Compile project",
-                    "icon": "gear",
-                    "type": "command",
-                    "command": "workbench.action.tasks.build"
+                    "key": "j",
+                    "name": "From JSON",
+                    "type": "bindings",
+                    "bindings": [
+                      {
+                        "key": "y",
+                        "name": "To YAML",
+                        "type": "command",
+                        "command": "vsdoom.json-to-yaml"
+                      },
+                      {
+                        "key": "e",
+                        "name": "To EDN",
+                        "type": "command",
+                        "command": "vsdoom.json-to-edn"
+                      }
+                    ]
                   },
                   {
-                    "key": "l",
-                    "name": "Toggle line comment",
-                    "icon": "comment",
-                    "type": "command",
-                    "command": "editor.action.commentLine"
+                    "key": "e",
+                    "name": "From EDN",
+                    "type": "bindings",
+                    "bindings": [
+                      {
+                        "key": "y",
+                        "name": "To YAML",
+                        "type": "command",
+                        "command": "vsdoom.edn-to-yaml"
+                      },
+                      {
+                        "key": "j",
+                        "name": "To JSON",
+                        "type": "command",
+                        "command": "vsdoom.edn-to-json"
+                      }
+                    ]
                   },
                   {
-                    "key": "n",
-                    "name": "Next error",
-                    "icon": "arrow-down",
-                    "type": "command",
-                    "command": "editor.action.marker.nextInFiles"
-                  },
-                  {
-                    "key": "N",
-                    "name": "Previous error",
-                    "icon": "arrow-up",
-                    "type": "command",
-                    "command": "editor.action.marker.prevInFiles"
+                    "key": "y",
+                    "name": "From YAML",
+                    "type": "bindings",
+                    "bindings": [
+                      {
+                        "key": "e",
+                        "name": "To EDN",
+                        "type": "command",
+                        "command": "vsdoom.yaml-to-edn"
+                      },
+                      {
+                        "key": "j",
+                        "name": "To JSON",
+                        "type": "command",
+                        "command": "vsdoom.yaml-to-json"
+                      }
+                    ]
                   }
                 ]
               },
@@ -1977,26 +2006,6 @@
                         "icon": "repl",
                         "type": "command",
                         "command": "calva.jackIn"
-                      },
-                      {
-                        "key": "c",
-                        "name": "Connect to REPL",
-                        "icon": "repl",
-                        "type": "conditional",
-                        "bindings": [
-                          {
-                            "key": "when:calva.repl",
-                            "name": "Show explorer view",
-                            "type": "command",
-                            "command": "workbench.view.explorer"
-                          },
-                          {
-                            "key": "when:sideBarVisible && explorerViewletVisible",
-                            "name": "Hide side bar",
-                            "type": "command",
-                            "command": "workbench.action.toggleSidebarVisibility"
-                          }
-                        ]
                       },
                       {
                         "key": "c",
