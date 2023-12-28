@@ -66,6 +66,67 @@
           "when": "sideBarVisible && explorerViewletVisible"
         },
         "when": "whichkeyVisible && sideBarVisible && explorerViewletVisible"
+      },
+      {
+        "key": "ctrl+shift+alt+o",
+        "command": "workbench.action.togglePanel"
+      },
+      {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+      },
+      {
+        "key": "ctrl+j",
+        "command": "search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+      },
+      {
+        "key": "ctrl+k",
+        "command": "search.focus.previousInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+      },
+      {
+        "key": "d",
+        "command": "search.action.remove",
+        "when": "fileMatchOrMatchFocus && searchViewletVisible"
+      },
+      {
+        "key": "l",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+      },
+      {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.closeActiveEditor"
+      },
+      {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+      },
+      {
+        "key": "ctrl+k",
+        "command": "widgetNavigation.focusPrevious",
+        "when": "inputFocus && navigableContainerFocused || navigableContainerFocused && !listFocus || navigableContainerFocused && listScrollAtBoundary == 'both' || navigableContainerFocused && listScrollAtBoundary == 'top'"
+      },
+      {
+        "key": "ctrl+j",
+        "command": "widgetNavigation.focusNext",
+        "when": "inputFocus && navigableContainerFocused || navigableContainerFocused && !listFocus || navigableContainerFocused && listScrollAtBoundary == 'both' || navigableContainerFocused && listScrollAtBoundary == 'top'"
+      },
+      {
+        "key": "ctrl+shift+alt+k ctrl+shift+alt+i",
+        "command": "workbench.action.showTreeHover",
+        "when": "customTreeView && listFocus && !inputFocus"
+      },
+      {
+        "key": "ctrl+k ctrl+i",
+        "command": "-workbench.action.showTreeHover",
+        "when": "customTreeView && listFocus && !inputFocus"
+      },
+      {
+        "key": "shift+d",
+        "command": "search.searchEditor.action.deleteFileResults",
+        "when": "inSearchEditor"
       }
     ],
     "configuration": [
