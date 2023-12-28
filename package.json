@@ -2,6 +2,11 @@
   "name": "vsdoom",
   "displayName": "VSDOOM",
   "description": "Clojure VSCode setup for fast start",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikitaSinc/vsdoom"
+  },
+  "publisher": "hsteam",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
@@ -1674,6 +1679,30 @@
                     "command": "paredit.slurpSexpBackward"
                   },
                   {
+                    "key": "\"",
+                    "name": "Wrap around \"\"",
+                    "type": "command",
+                    "command": "paredit.wrapAroundQuote"
+                  },
+                  {
+                    "key": "(",
+                    "name": "Wrap around ()",
+                    "type": "command",
+                    "command": "paredit.wrapAroundParens"
+                  },
+                  {
+                    "key": "[",
+                    "name": "Wrap around []",
+                    "type": "command",
+                    "command": "paredit.wrapAroundSquare"
+                  },
+                  {
+                    "key": "{",
+                    "name": "Wrap around {}",
+                    "type": "command",
+                    "command": "paredit.wrapAroundCurly"
+                  },
+                  {
                     "key": "w",
                     "name": "+Wrap",
                     "type": "bindings",
@@ -1916,6 +1945,26 @@
                         "icon": "repl",
                         "type": "command",
                         "command": "calva.jackIn"
+                      },
+                      {
+                        "key": "c",
+                        "name": "Connect to REPL",
+                        "icon": "repl",
+                        "type": "conditional",
+                        "bindings": [
+                          {
+                            "key": "when:calva.repl",
+                            "name": "Show explorer view",
+                            "type": "command",
+                            "command": "workbench.view.explorer"
+                          },
+                          {
+                            "key": "when:sideBarVisible && explorerViewletVisible",
+                            "name": "Hide side bar",
+                            "type": "command",
+                            "command": "workbench.action.toggleSidebarVisibility"
+                          }
+                        ]
                       },
                       {
                         "key": "c",

@@ -1,16 +1,12 @@
-# vsdoom README
+# Before installation
 
-## Working with Markdown
+## Macos
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+* For normal use hjkl navigation:
+  ```defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false```
+* For fixing delay between space keypreses:
+ [Disable](https://vspacecode.github.io/docs/troubleshooting/) ```Add period with double-space``` macos option
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+# After installation
 
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* [Enable VSpaceCode configuration and keybindings](https://vspacecode.github.io/docs/troubleshooting/#unresponsive-menu-activation)
