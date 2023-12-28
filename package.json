@@ -1578,6 +1578,159 @@
                 ]
               },
               {
+                "key": "k",
+                "name": "+Structural editing",
+                "icon": "symbol-struct",
+                "type": "bindings",
+                "bindings": [
+                  {
+                    "key": ".",
+                    "name": "Toggle paredit mode",
+                    "type": "command",
+                    "command": "paredit.togglemode"
+                  },
+                  {
+                    "key": "b",
+                    "name": "Barf expression forward",
+                    "type": "command",
+                    "command": "paredit.barfSexpForward"
+                  },
+                  {
+                    "key": "c",
+                    "name": "Convolute expression",
+                    "type": "command",
+                    "command": "paredit.convolute"
+                  },
+                  {
+                    "key": "h",
+                    "name": "Backward expression",
+                    "type": "command",
+                    "command": "paredit.backwardSexp"
+                  },
+                  {
+                    "key": "j",
+                    "name": "Forward down expression",
+                    "type": "command",
+                    "command": "paredit.forwardDownSexp"
+                  },
+                  {
+                    "key": "k",
+                    "name": "Backward down expression",
+                    "type": "command",
+                    "command": "paredit.backwardDownSexp"
+                  },
+                  {
+                    "key": "l",
+                    "name": "Forward expression",
+                    "type": "command",
+                    "command": "paredit.forwardSexp"
+                  },
+                  {
+                    "key": "r",
+                    "name": "Raise expression",
+                    "type": "command",
+                    "command": "paredit.raiseSexp"
+                  },
+                  {
+                    "key": "s",
+                    "name": "Slurp expression forward",
+                    "type": "command",
+                    "command": "paredit.slurpSexpForward"
+                  },
+                  {
+                    "key": "t",
+                    "name": "Transpose expression",
+                    "type": "command",
+                    "command": "paredit.transpose"
+                  },
+                  {
+                    "key": "B",
+                    "name": "Barf expression backward",
+                    "type": "command",
+                    "command": "paredit.barfSexpBackward"
+                  },
+                  {
+                    "key": "H",
+                    "name": "Backward up expression",
+                    "type": "command",
+                    "command": "paredit.backwardUpSexp"
+                  },
+                  {
+                    "key": "J",
+                    "name": "Join expression",
+                    "type": "command",
+                    "command": "paredit.joinSexp"
+                  },
+                  {
+                    "key": "L",
+                    "name": "Forward up expression",
+                    "type": "command",
+                    "command": "paredit.forwardUpSexp"
+                  },
+                  {
+                    "key": "S",
+                    "name": "Slurp expression backward",
+                    "type": "command",
+                    "command": "paredit.slurpSexpBackward"
+                  },
+                  {
+                    "key": "w",
+                    "name": "+Wrap",
+                    "type": "bindings",
+                    "bindings": [
+                      {
+                        "key": "\"",
+                        "name": "Wrap around \"\"",
+                        "type": "command",
+                        "command": "paredit.wrapAroundQuote"
+                      },
+                      {
+                        "key": "(",
+                        "name": "Wrap around ()",
+                        "type": "command",
+                        "command": "paredit.wrapAroundParens"
+                      },
+                      {
+                        "key": "[",
+                        "name": "Wrap around []",
+                        "type": "command",
+                        "command": "paredit.wrapAroundSquare"
+                      },
+                      {
+                        "key": "c",
+                        "name": "Rewrap {}",
+                        "type": "command",
+                        "command": "paredit.rewrapCurly"
+                      },
+                      {
+                        "key": "p",
+                        "name": "Rewrap ()",
+                        "type": "command",
+                        "command": "paredit.rewrapParens"
+                      },
+                      {
+                        "key": "q",
+                        "name": "Rewrap \"\"",
+                        "type": "command",
+                        "command": "paredit.rewrapQuote"
+                      },
+                      {
+                        "key": "s",
+                        "name": "Rewrap []",
+                        "type": "command",
+                        "command": "paredit.rewrapSquare"
+                      },
+                      {
+                        "key": "{",
+                        "name": "Wrap around {}",
+                        "type": "command",
+                        "command": "paredit.wrapAroundCurly"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
                 "key": "m",
                 "name": "+Major",
                 "icon": "code",
@@ -1765,7 +1918,7 @@
                         "command": "calva.jackIn"
                       },
                       {
-                        "key": "'",
+                        "key": "c",
                         "name": "Connect to REPL",
                         "icon": "repl",
                         "type": "command",
@@ -1886,7 +2039,7 @@
                             "command": "calva.clearInlineResults"
                           },
                           {
-                            "key": "n",
+                            "key": "b",
                             "name": "Evaluate all code in namespace",
                             "type": "command",
                             "command": "calva.loadFile"
@@ -1908,159 +2061,6 @@
                             "name": "Replace form with evaluation result",
                             "type": "command",
                             "command": "calva.evaluateSelectionReplace"
-                          }
-                        ]
-                      },
-                      {
-                        "key": "k",
-                        "name": "+Structural editing",
-                        "icon": "symbol-struct",
-                        "type": "bindings",
-                        "bindings": [
-                          {
-                            "key": ".",
-                            "name": "Toggle paredit mode",
-                            "type": "command",
-                            "command": "paredit.togglemode"
-                          },
-                          {
-                            "key": "b",
-                            "name": "Barf expression forward",
-                            "type": "command",
-                            "command": "paredit.barfSexpForward"
-                          },
-                          {
-                            "key": "c",
-                            "name": "Convolute expression",
-                            "type": "command",
-                            "command": "paredit.convolute"
-                          },
-                          {
-                            "key": "h",
-                            "name": "Backward expression",
-                            "type": "command",
-                            "command": "paredit.backwardSexp"
-                          },
-                          {
-                            "key": "j",
-                            "name": "Forward down expression",
-                            "type": "command",
-                            "command": "paredit.forwardDownSexp"
-                          },
-                          {
-                            "key": "k",
-                            "name": "Backward down expression",
-                            "type": "command",
-                            "command": "paredit.backwardDownSexp"
-                          },
-                          {
-                            "key": "l",
-                            "name": "Forward expression",
-                            "type": "command",
-                            "command": "paredit.forwardSexp"
-                          },
-                          {
-                            "key": "r",
-                            "name": "Raise expression",
-                            "type": "command",
-                            "command": "paredit.raiseSexp"
-                          },
-                          {
-                            "key": "s",
-                            "name": "Slurp expression forward",
-                            "type": "command",
-                            "command": "paredit.slurpSexpForward"
-                          },
-                          {
-                            "key": "t",
-                            "name": "Transpose expression",
-                            "type": "command",
-                            "command": "paredit.transpose"
-                          },
-                          {
-                            "key": "B",
-                            "name": "Barf expression backward",
-                            "type": "command",
-                            "command": "paredit.barfSexpBackward"
-                          },
-                          {
-                            "key": "H",
-                            "name": "Backward up expression",
-                            "type": "command",
-                            "command": "paredit.backwardUpSexp"
-                          },
-                          {
-                            "key": "J",
-                            "name": "Join expression",
-                            "type": "command",
-                            "command": "paredit.joinSexp"
-                          },
-                          {
-                            "key": "L",
-                            "name": "Forward up expression",
-                            "type": "command",
-                            "command": "paredit.forwardUpSexp"
-                          },
-                          {
-                            "key": "S",
-                            "name": "Slurp expression backward",
-                            "type": "command",
-                            "command": "paredit.slurpSexpBackward"
-                          },
-                          {
-                            "key": "w",
-                            "name": "+Wrap",
-                            "type": "bindings",
-                            "bindings": [
-                              {
-                                "key": "\"",
-                                "name": "Wrap around \"\"",
-                                "type": "command",
-                                "command": "paredit.wrapAroundQuote"
-                              },
-                              {
-                                "key": "(",
-                                "name": "Wrap around ()",
-                                "type": "command",
-                                "command": "paredit.wrapAroundParens"
-                              },
-                              {
-                                "key": "[",
-                                "name": "Wrap around []",
-                                "type": "command",
-                                "command": "paredit.wrapAroundSquare"
-                              },
-                              {
-                                "key": "c",
-                                "name": "Rewrap {}",
-                                "type": "command",
-                                "command": "paredit.rewrapCurly"
-                              },
-                              {
-                                "key": "p",
-                                "name": "Rewrap ()",
-                                "type": "command",
-                                "command": "paredit.rewrapParens"
-                              },
-                              {
-                                "key": "q",
-                                "name": "Rewrap \"\"",
-                                "type": "command",
-                                "command": "paredit.rewrapQuote"
-                              },
-                              {
-                                "key": "s",
-                                "name": "Rewrap []",
-                                "type": "command",
-                                "command": "paredit.rewrapSquare"
-                              },
-                              {
-                                "key": "{",
-                                "name": "Wrap around {}",
-                                "type": "command",
-                                "command": "paredit.wrapAroundCurly"
-                              }
-                            ]
                           }
                         ]
                       },
