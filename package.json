@@ -24,11 +24,37 @@
   "extensionDependencies": [
     "VSpaceCode.vspacecode"
   ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "vsdoom.evalIntoBuffer",
         "title": "VSDoom+Calva: Eval Into Buffer"
+      },
+      {
+        "command": "vsdoom.json-to-yaml",
+        "title": "Convert json to yaml"
+      },
+      {
+        "command": "vsdoom.yaml-to-json",
+        "title": "Convert yaml to json"
+      },
+      {
+        "command": "vsdoom.edn-to-json",
+        "title": "Convert edn to json"
+      },
+      {
+        "command": "vsdoom.json-to-edn",
+        "title": "Convert json to edn"
+      },
+      {
+        "command": "vsdoom.yaml-to-edn",
+        "title": "Convert yaml to edn"
+      },
+      {
+        "command": "vsdoom.edn-to-yaml",
+        "title": "Convert edn to yaml"
       }
     ],
     "keybindings": [
