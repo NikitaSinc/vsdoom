@@ -5,7 +5,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const myProvider = new (class implements vscode.TextDocumentContentProvider {
 		provideTextDocumentContent(uri: vscode.Uri): string {
 			const tmp = uri.query.split("=")[1].substring(1);
-			// TODO:
+			// TODO: change this to more optimized version
 			const value = tmp.substring(0, tmp.length - 1);
 			const lines = value.split("\\n");
 			return lines.join('\n');
