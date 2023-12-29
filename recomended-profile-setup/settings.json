@@ -4,6 +4,7 @@
     "editor.guides.indentation": false,
     "editor.glyphMargin": false,
     "window.title": " ",
+    "editor.acceptSuggestionOnEnter": "smart",
     "editor.showFoldingControls": "never",
     "whichkey.delay": 1000,
     "vim.commandLineModeKeyBindingsNonRecursive": [
@@ -1242,7 +1243,6 @@
             "command": "workbench.action.focusEighthEditorGroup"
         }
     ],
-    "editor.acceptSuggestionOnEnter": "off",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
